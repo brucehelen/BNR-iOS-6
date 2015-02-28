@@ -21,6 +21,8 @@
 		114418041AA1BCE500FC4EDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114417E61AA1BCE500FC4EDC /* UIKit.framework */; };
 		1144180C1AA1BCE500FC4EDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1144180A1AA1BCE500FC4EDC /* InfoPlist.strings */; };
 		1144180E1AA1BCE500FC4EDC /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1144180D1AA1BCE500FC4EDC /* HypnoNerdTests.m */; };
+		114418191AA1BD8900FC4EDC /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114418181AA1BD8900FC4EDC /* BNRHypnosisView.m */; };
+		1144181C1AA1BDDF00FC4EDC /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1144181B1AA1BDDF00FC4EDC /* BNRHypnosisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		114418091AA1BCE500FC4EDC /* HypnoNerdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoNerdTests-Info.plist"; sourceTree = "<group>"; };
 		1144180B1AA1BCE500FC4EDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1144180D1AA1BCE500FC4EDC /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		114418171AA1BD8900FC4EDC /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		114418181AA1BD8900FC4EDC /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		1144181A1AA1BDDF00FC4EDC /* BNRHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisViewController.h; sourceTree = "<group>"; };
+		1144181B1AA1BDDF00FC4EDC /* BNRHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				114417F41AA1BCE500FC4EDC /* Main.storyboard */,
 				114417F71AA1BCE500FC4EDC /* BNRViewController.h */,
 				114417F81AA1BCE500FC4EDC /* BNRViewController.m */,
+				114418171AA1BD8900FC4EDC /* BNRHypnosisView.h */,
+				114418181AA1BD8900FC4EDC /* BNRHypnosisView.m */,
+				1144181A1AA1BDDF00FC4EDC /* BNRHypnosisViewController.h */,
+				1144181B1AA1BDDF00FC4EDC /* BNRHypnosisViewController.m */,
 				114417FA1AA1BCE500FC4EDC /* Images.xcassets */,
 				114417E91AA1BCE500FC4EDC /* Supporting Files */,
 			);
@@ -252,7 +262,9 @@
 			files = (
 				114417EF1AA1BCE500FC4EDC /* main.m in Sources */,
 				114417F31AA1BCE500FC4EDC /* BNRAppDelegate.m in Sources */,
+				114418191AA1BD8900FC4EDC /* BNRHypnosisView.m in Sources */,
 				114417F91AA1BCE500FC4EDC /* BNRViewController.m in Sources */,
+				1144181C1AA1BDDF00FC4EDC /* BNRHypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +469,7 @@
 				114418131AA1BCE600FC4EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114418141AA1BCE600FC4EDC /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +478,7 @@
 				114418161AA1BCE600FC4EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
