@@ -20,7 +20,8 @@
 - (void)loadView
 {
     [super loadView];
-    _backgroundView = [[BNRHypnosisView alloc] init];
+    CGRect frame = [UIScreen mainScreen].bounds;
+    _backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
     self.view = _backgroundView;
 }
 
@@ -31,11 +32,11 @@
 }
 
 // 这个方法中，视图view的frame为什么还为空？？？
+// BUG fix: 在loadView方法使用initWithFrame:方法
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // TODO:为什么view的frame属性还是0
-    //NSLog(@"self = %@", self.view);
+    NSLog(@"self = %@", self.view);
 
     _segmentedColorControl = [[UISegmentedControl alloc] initWithItems:@[@"红",
                                                                          @"绿",
