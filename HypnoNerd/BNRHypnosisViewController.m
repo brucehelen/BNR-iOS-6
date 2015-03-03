@@ -14,7 +14,10 @@
 // 使用代码的方式设置视图控制器的view属性
 - (void)loadView
 {
-    BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] init];
+    // 先获取主屏幕的bounds，然后赋值给view，否则在下面的
+    // viewDidLoad方法中，frame的值为0
+    CGRect frame = [UIScreen mainScreen].bounds;
+    BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
     
     self.view = backgroundView;
 }
@@ -23,7 +26,7 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"BNRHypnosisViewController viewDidLoad");
+    NSLog(@"BNRHypnosisViewController viewDidLoad, self.view = %@", self.view);
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
