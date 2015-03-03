@@ -11,11 +11,19 @@
 
 @implementation BNRHypnosisViewController
 
+// 使用代码的方式设置视图控制器的view属性
 - (void)loadView
 {
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] init];
     
     self.view = backgroundView;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    NSLog(@"BNRHypnosisViewController viewDidLoad");
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -15,11 +15,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // hvc初始化：使用代码构建
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
 
-    NSBundle *appBundle = [NSBundle mainBundle];
-    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    // rvc初始化：从xib文件中加载
+    // 使用init方法自动匹配xib名称
+    //NSBundle *appBundle = [NSBundle mainBundle];
+    //BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
+    // 将hvc和rvc加入TabBar控制器中
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[hvc, rvc];
     
