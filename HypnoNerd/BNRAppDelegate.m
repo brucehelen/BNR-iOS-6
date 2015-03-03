@@ -9,6 +9,8 @@
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
 #import "BNRReminderViewController.h"
+#import "BNRQuizViewController.h"
+
 
 @implementation BNRAppDelegate
 
@@ -25,9 +27,12 @@
     //BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
+    // 练习题，将Quiz视图加进来
+    BNRQuizViewController *qvc = [[BNRQuizViewController alloc] init];
+    
     // 将hvc和rvc加入TabBar控制器中
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, rvc];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
     
     self.window.rootViewController = tabBarController;
 

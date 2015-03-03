@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113AAEAB1AA5455C00FC3EFF /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113AAEAA1AA5455C00FC3EFF /* BNRQuizViewController.m */; };
+		113AAEAD1AA5458F00FC3EFF /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113AAEAC1AA5458F00FC3EFF /* BNRQuizViewController.xib */; };
 		114417E31AA1BCE500FC4EDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114417E21AA1BCE500FC4EDC /* Foundation.framework */; };
 		114417E51AA1BCE500FC4EDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114417E41AA1BCE500FC4EDC /* CoreGraphics.framework */; };
 		114417E71AA1BCE500FC4EDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114417E61AA1BCE500FC4EDC /* UIKit.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113AAEA91AA5455C00FC3EFF /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		113AAEAA1AA5455C00FC3EFF /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		113AAEAC1AA5458F00FC3EFF /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 		114417DF1AA1BCE500FC4EDC /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114417E21AA1BCE500FC4EDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		114417E41AA1BCE500FC4EDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +133,9 @@
 			children = (
 				114417F11AA1BCE500FC4EDC /* BNRAppDelegate.h */,
 				114417F21AA1BCE500FC4EDC /* BNRAppDelegate.m */,
+				113AAEA91AA5455C00FC3EFF /* BNRQuizViewController.h */,
+				113AAEAA1AA5455C00FC3EFF /* BNRQuizViewController.m */,
+				113AAEAC1AA5458F00FC3EFF /* BNRQuizViewController.xib */,
 				114417F41AA1BCE500FC4EDC /* Main.storyboard */,
 				114417F71AA1BCE500FC4EDC /* BNRViewController.h */,
 				114417F81AA1BCE500FC4EDC /* BNRViewController.m */,
@@ -255,6 +263,7 @@
 				32A84F4C1AA1EC54002EFF88 /* BNRReminderViewController.xib in Resources */,
 				114417ED1AA1BCE500FC4EDC /* InfoPlist.strings in Resources */,
 				114417F61AA1BCE500FC4EDC /* Main.storyboard in Resources */,
+				113AAEAD1AA5458F00FC3EFF /* BNRQuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114417EF1AA1BCE500FC4EDC /* main.m in Sources */,
+				113AAEAB1AA5455C00FC3EFF /* BNRQuizViewController.m in Sources */,
 				32A84F4A1AA1EB53002EFF88 /* BNRReminderViewController.m in Sources */,
 				114417F31AA1BCE500FC4EDC /* BNRAppDelegate.m in Sources */,
 				114418191AA1BD8900FC4EDC /* BNRHypnosisView.m in Sources */,
