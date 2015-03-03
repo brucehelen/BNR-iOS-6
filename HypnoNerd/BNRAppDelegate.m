@@ -32,7 +32,7 @@
     
     // 将hvc和rvc加入TabBar控制器中
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, rvc, qvc];
+    tabBarController.viewControllers = @[rvc, hvc , qvc];
     
     self.window.rootViewController = tabBarController;
 

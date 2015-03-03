@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"BNRReminderViewController viewDidLoad");
+    NSLog(@"BNRReminderViewController viewDidLoad self = %@", self.view);
 }
 
 // 每次显示视图时都会调用

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BNRHypnosisView : UIView
-
+- (void)setCircleColor:(UIColor *)circleColor;
 @end
