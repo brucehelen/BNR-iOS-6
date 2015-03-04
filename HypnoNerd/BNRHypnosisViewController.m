@@ -38,9 +38,37 @@
     self.view = backgroundView;
 }
 
+// 虽然控制器下面有TabBar，但是控制的宽和高都没变：320*480
+- (void)drawHypnoticMessage:(NSString *)message
+{
+    for (int i = 0; i < 20; i++) {
+        UILabel *messageLabel = [[UILabel alloc] init];
+        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.textColor = [UIColor blackColor];
+        messageLabel.text = message;
+        
+        // 根据需要调整Label的大小
+        [messageLabel sizeToFit];
+
+        int width = (int)(self.view.bounds.size.width - messageLabel.bounds.size.width);
+        int x = arc4random()%width;
+        
+        int height = (int)(self.view.bounds.size.height - messageLabel.bounds.size.height);
+        int y = arc4random() % height;
+        
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x, y);
+        messageLabel.frame = frame;
+        
+        [self.view addSubview:messageLabel];
+    }
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"textField = %@", textField.text);
+    [self drawHypnoticMessage:textField.text];
+    _textField.text = @"";
     [_textField resignFirstResponder];
     return YES;
 }
